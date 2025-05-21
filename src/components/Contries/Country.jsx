@@ -18,8 +18,8 @@ const Country = ({country, handleVisitedCountries}) => {
         <div className={`box ${visited ? 'visited' : 'non-visited'}`}>
             <h2 style={{color: visited ? 'purple' : 'white'}}>Name :{name.common}</h2>
             {flags?.png &&<img src={flags.png} alt="Country Flag"/>}
-            <p>Population: {population?.toLocaleString() || "N/A"}</p>
-            <p>Area: {area?.toLocaleString()} km²</p>
+            <p>Population : {population?.toLocaleString() || "N/A"}</p>
+            <p>Area : {area?.toLocaleString()} km²</p>
              
              <button onClick={()=>handleVisitedCountries(country)}>Mark Visited</button>
             <button onClick={handleVisited}> {visited ? 'Visited' : 'Going'}</button>

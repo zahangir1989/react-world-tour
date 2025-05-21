@@ -9,3 +9,12 @@
     background-color: bisque;
     color: black;
 }
+
+@media screen and(min-width:612px) {
+  .country-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+
+}  
+}
